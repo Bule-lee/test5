@@ -5,3 +5,9 @@
 /cloud-eureka-server7002/target/
 /cloud-provider-payment8001/target/
 /cloud-provider-payment8002/target/
+.idea
+*.iml
+*.md
+mvnw
+mvnw.cmd
+*.ipr
