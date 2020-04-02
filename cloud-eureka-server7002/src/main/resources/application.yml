@@ -17,5 +17,5 @@ eureka:
 
 
 
-#    service-url: #defaultZone:  http://localhost:8761/eureka/ 这为默认地址，我们需要修改城我们的。
+#    #service-url: #defaultZone:  http://localhost:8761/eureka/ 这为默认地址，我们需要修改城我们的。
 #      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
