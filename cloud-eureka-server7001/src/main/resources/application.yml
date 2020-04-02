@@ -1,0 +1,19 @@
+server:
+  port: 7001
+eureka:
+  instance:
+    hostname: eureka7001.com #eureka 服务端的实例名称
+
+  client:
+    #是否向注册中心注册自己
+    register-with-eureka: false
+    #false表示自己端就是注册中心，我的职责 就是维护服务实例，并不需要去检索服务
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/
+
+      #单机版 defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      #集群版，把7002注册
+
+#    service-url: #defaultZone:  http://localhost:8761/eureka/ 这为默认地址，我们需要修改城我们的。
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
